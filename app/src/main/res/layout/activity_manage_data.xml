@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Save_data"
+    android:background="#E7CCF3">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:id="@+id/manageshow"
+        android:textSize="20dp"
+        android:padding="10dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="445dp"
+        android:layout_margin="25dp"
+        android:background="#D274F4"
+        android:elevation="20dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/manageID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID"
+            android:fontFamily="@font/arialbd"/>
+
+        <EditText
+            android:id="@+id/manaName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:fontFamily="@font/arialbd"/>
+
+        <EditText
+            android:id="@+id/manegeSurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Surname"
+            android:fontFamily="@font/arialbd"/>
+
+        <EditText
+            android:id="@+id/manaTel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Tel"
+            android:inputType="phone"
+            android:fontFamily="@font/arialbd"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:layout_marginTop="50dp">
+
+            <Button
+                android:id="@+id/btnUpdata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#4CAF50"
+                android:text="updata"
+                android:textColor="@color/white"
+                android:fontFamily="@font/arialbd"/>
+
+            <Button
+                android:id="@+id/btnDelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#F44336"
+                android:textColor="@color/white"
+                android:text="Delect"
+                android:fontFamily="@font/arialbd"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
